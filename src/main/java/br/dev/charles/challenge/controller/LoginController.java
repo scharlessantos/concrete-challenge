@@ -19,7 +19,7 @@ import br.dev.charles.challenge.repository.UserRepository;
 import br.dev.charles.challenge.utils.StringUtils;
 
 @RestController
-@RequestMapping("/login")
+@RequestMapping(value = "/login", produces = "application/json; charset=UTF-8")
 public class LoginController {
 
 	protected static final ModelMapper mapper = new ModelMapper();
